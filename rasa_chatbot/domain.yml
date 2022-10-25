@@ -1,0 +1,73 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - who_are_you
+  - skills
+  - project_fund
+  - project_launch
+  - project_description
+  
+responses:
+  utter_greet:
+  - text: "Hi! I am StairwAI bot, here to connect you to AI resources."
+
+  utter_geturl:
+  - text: "Please give me a pdf url, local file path, doi (doi:) or title of the paper (title:)"
+
+  utter_affirm:
+  - text: "Okay"
+  - text: "Alright"
+  - text: "Ok"
+
+  utter_deny:
+  - text: "Ok"
+
+  utter_bye:
+  - text: "Seeya!"
+
+  utter_getnote:
+  - text: "Please jot down your thoughts starting with 'Note:'"
+
+  utter_question:
+  - text: "Ready to take your questions"
+
+  utter_who_are_you:
+  - text: "Well, I am a chatbot for the StairwAI EU project."
+
+  utter_skills:
+  - text: "I can assess your AI readiness level, suggest assets for your problem or we can chat about AI and related technologies "
+
+  utter_project_fund:
+  - text: "The project has received funding from the European Union’s Horizon 2020 research and innovation program. Here's the link to the project page: https://cordis.europa.eu/project/id/101017142/de"
+
+  utter_project_launch:
+  - text: "In January 2021"
+
+  utter_project_description:
+  - text: "The StairwAI project targets low-tech users with the goal of facilitating their engagement on the AI on-demand Platform"
+
+  # utter_project_description:
+  # - text: ""
+
+actions:
+- action_summarize
+- action_answer_question
+- action_setdoc
+- action_extractkeyword
+- action_extractfigs
+- action_help
+- action_bibtex
+- action_addnotes
+- action_getnotes
+- action_scitldr
+- action_session_id
+- action_paper_log
+- action_paper_ref
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

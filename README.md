@@ -4,6 +4,7 @@ Python script to run Telegram chatbot and send user input to Rasa.
 
 
 ### 1. To run Telegram chatbot:
+Create Telegram chatbot and get Bot token: [link](https://core.telegram.org/bots#how-do-i-create-a-bot) Insert token on line 90
 ```
 python telegram_chatbot.py
 ```

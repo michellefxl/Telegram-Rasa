@@ -1,0 +1,50 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  # - action: action_session_id
+  # - action: action_help
+
+- story: affirm path
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- story: deny path
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- story: bye path
+  steps:
+  - intent: goodbye
+  - action: utter_bye
+
+- story: who path
+  steps:
+  - intent: who_are_you
+  - action: utter_who_are_you
+
+- story: skills path
+  steps:
+  - intent: skills
+  - action: utter_skills
+
+- story: fund path
+  steps:
+  - intent: project_fund
+  - action: utter_project_fund
+
+- story: launch path
+  steps:
+  - intent: project_launch
+  - action: utter_project_launch
+
+- story: describe path
+  steps:
+  - intent: project_description
+  - action: utter_project_description
